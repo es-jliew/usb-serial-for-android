@@ -305,7 +305,8 @@ public class ProlificSerialDriver implements UsbSerialDriver {
                 } else if(deviceVersion == 0x500 && testHxStatus()) {
                     mDeviceType = DeviceType.DEVICE_TYPE_T; // TB
                 } else {
-                    mDeviceType = DeviceType.DEVICE_TYPE_HXN;
+                    //mDeviceType = DeviceType.DEVICE_TYPE_HXN;
+                    mDeviceType = DeviceType.DEVICE_TYPE_HX;
                 }
             } else {
                 mDeviceType = DeviceType.DEVICE_TYPE_HX;
